@@ -3,9 +3,9 @@
 
 int main() {
     DynIntQueue iQueue;
-    cout << "Enqueuing 5 items...\n";
 
     // enqueue 5 items
+    cout << "Enqueuing 5 items...\n";
     for (int k = 1; k < 5; k++) {
         iQueue.enqueue(k*k);
     }
