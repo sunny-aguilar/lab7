@@ -62,3 +62,4 @@ void Queue::queueOperations() {
 }
 
 void Queue::addBack() {}
+void Queue::removeFront() {}
