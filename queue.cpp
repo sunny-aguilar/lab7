@@ -98,7 +98,11 @@ void Queue::removeFront() {}
 *********************************************************************/
 void Queue::printQueue() {}
 
-
+/*********************************************************************
+** Description:     this function traverses through the queue
+**                  starting from the head using the next pointer and
+**                  prints the values of each node in the queue.
+*********************************************************************/
 bool Queue::isEmpty() {
 
 }
