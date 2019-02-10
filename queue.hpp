@@ -23,6 +23,7 @@ public:
     void removeFront();
     void getFront();
     void printQueue();
+    bool isEmpty();
 
 private:
     Menu menu;
