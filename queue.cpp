@@ -99,10 +99,11 @@ void Queue::removeFront() {}
 void Queue::printQueue() {}
 
 /*********************************************************************
-** Description:     this function traverses through the queue
-**                  starting from the head using the next pointer and
-**                  prints the values of each node in the queue.
+** Description:     this function checks if the que is empty and if
+**                  it is, then it returns true otherwise it returns
+**                  false
 *********************************************************************/
 bool Queue::isEmpty() {
-
+    if (head == nullptr) { return true; }
+    else { return false; }
 }

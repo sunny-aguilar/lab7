@@ -28,6 +28,13 @@ public:
 private:
     Menu menu;
     bool showMenu;
+    struct QueueNode {
+        QueueNode *next;
+        QueueNode *prev;
+        int val;
+    };
+
+    QueueNode *head;
 
 };
 
