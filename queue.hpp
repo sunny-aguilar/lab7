@@ -19,6 +19,8 @@ public:
     void startQueue();
     void queueFlow();
     void queueOperations();
+    void addback();
+
 
 private:
     Menu menu;
