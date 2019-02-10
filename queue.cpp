@@ -97,3 +97,8 @@ void Queue::removeFront() {}
 **                  prints the values of each node in the queue.
 *********************************************************************/
 void Queue::printQueue() {}
+
+
+bool Queue::isEmpty() {
+
+}
