@@ -17,7 +17,7 @@ public:
     void startQueue();
 
 private:
-
+    Menu menu;
 
 };
 
