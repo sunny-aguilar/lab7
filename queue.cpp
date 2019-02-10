@@ -43,18 +43,22 @@ void Queue::queueOperations() {
     switch (menu.validateNumber(1,5)) {
         case 1:
             menu.addValue();
+            addBack( menu.validateNumber(1, 20000) );
             cout << endl;
             break;
         case 2:
             menu.displayFirstNode();
+            getFront();
             cout << endl;
             break;
         case 3:
             menu.removeFirstNode();
+            removeFront();
             cout << endl;
             break;
         case 4:
             menu.displayQueueContents();
+            printQueue();
             cout << endl;
             break;
         case 5:
@@ -76,16 +80,16 @@ void Queue::addBack(int num) {
 }
 
 /*********************************************************************
-** Description:     returns the value of the node at the front of the
-**                  queue
-*********************************************************************/
-void Queue::removeFront() {}
-
-/*********************************************************************
 ** Description:     this function removes the front node in the queue
 **                  and frees the memory
 *********************************************************************/
 void Queue::getFront() {}
+
+/*********************************************************************
+** Description:     returns the value of the node at the front of the
+**                  queue
+*********************************************************************/
+void Queue::removeFront() {}
 
 /*********************************************************************
 ** Description:     this function traverses through the queue
