@@ -39,17 +39,23 @@ void Menu::addValue() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::displayFirstNode() {}
+void Menu::displayFirstNode() {
+
+}
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::removeFirstNode() {}
+void Menu::removeFirstNode() {
+
+}
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::displayQueueContents() {}
+void Menu::displayQueueContents() {
+
+}
 
 /*********************************************************************
 ** Description:     general validator where the parameters are the
