@@ -9,7 +9,7 @@
 /*********************************************************************
 ** Description:     constructor
 *********************************************************************/
-Queue::Queue() {}
+Queue::Queue() : showMenu{true} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -43,9 +43,11 @@ void Queue::queueOperations() {
     switch (menu.validateNumber(1,5)) {
         case 1:
             menu.addValue();
+            cout << endl;
             break;
         case 2:
             menu.displayFirstNode();
+            cout << endl;
             break;
         case 3:
             menu.removeFirstNode();
