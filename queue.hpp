@@ -20,7 +20,7 @@ public:
     void queueFlow();
     void queueOperations();
     void addback();
-
+    void removeFront();
 
 private:
     Menu menu;
