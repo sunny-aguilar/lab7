@@ -31,12 +31,14 @@ void Menu::startMenu() {
 **                  of the queue
 *********************************************************************/
 void Menu::addValue() {
-    cout << "\n Enter an integer from 0 to 999 to \n";
-    cout << " add to the head of the list\n";
     cout << "+--------------------------------------------------+\n";
+    cout << "\n Enter a value to add to the back of the queue\n";
     cout << ">> ";
 }
 
+/*********************************************************************
+** Description:     d
+*********************************************************************/
 void Menu::displayFirstNode() {}
 void Menu::removeFirstNode() {}
 void Menu::displayQueueContents() {}
