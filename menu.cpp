@@ -26,6 +26,10 @@ void Menu::startMenu() {
     cout << "5. Exit\n";
 }
 
+/*********************************************************************
+** Description:     prompts user to enter a value to add to the back
+**                  of the queue
+*********************************************************************/
 void Menu::addValue() {
     cout << "\n Enter an integer from 0 to 999 to \n";
     cout << " add to the head of the list\n";
