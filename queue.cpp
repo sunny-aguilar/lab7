@@ -55,6 +55,7 @@ void Queue::queueOperations() {
             break;
         case 4:
             menu.displayQueueContents();
+            cout << endl;
             break;
         case 5:
             showMenu = false;
