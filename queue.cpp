@@ -62,7 +62,8 @@ void Queue::queueOperations() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     function takes a user-entered int value as a
+**                  parameter
 *********************************************************************/
 void Queue::addBack(int num) {}
 
