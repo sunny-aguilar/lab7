@@ -51,6 +51,7 @@ void Queue::queueOperations() {
             break;
         case 3:
             menu.removeFirstNode();
+            cout << endl;
             break;
         case 4:
             menu.displayQueueContents();
