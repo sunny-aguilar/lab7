@@ -33,7 +33,6 @@ private:
         QueueNode *prev;
         int val;
     };
-
     QueueNode *head;
 
 };
