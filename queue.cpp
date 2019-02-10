@@ -7,6 +7,16 @@
 #include "queue.hpp"
 
 /*********************************************************************
+** Description:     constructor
+*********************************************************************/
+Queue::Queue() {}
+
+/*********************************************************************
+** Description:     destructor
+*********************************************************************/
+Queue::~Queue() {}
+
+/*********************************************************************
 ** Description:     starts queue operations
 *********************************************************************/
 void Queue::startQueue() {
@@ -32,14 +42,19 @@ void Queue::queueOperations() {
 
     switch (menu.validateNumber(1,5)) {
         case 1:
+            menu.addValue();
             break;
         case 2:
+
             break;
         case 3:
+
             break;
         case 4:
+
             break;
         case 5:
+
             break;
         default:
             cout << "Unable to determine your selection!\n";

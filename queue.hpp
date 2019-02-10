@@ -14,6 +14,8 @@ using std::cout;
 
 class Queue {
 public:
+    Queue();
+    ~Queue();
     void startQueue();
     void queueFlow();
     void queueOperations();
