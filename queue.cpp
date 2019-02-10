@@ -62,12 +62,12 @@ void Queue::queueOperations() {
 }
 
 /*********************************************************************
-** Description:     start menu that prompts user to select an option
+** Description:     d
 *********************************************************************/
 void Queue::addBack() {}
 
 /*********************************************************************
-** Description:     start menu that prompts user to select an option
+** Description:     d
 *********************************************************************/
 void Queue::removeFront() {}
 
