@@ -32,7 +32,7 @@ void Menu::startMenu() {
 *********************************************************************/
 void Menu::addValue() {
     cout << "+--------------------------------------------------+\n";
-    cout << "Enter a value to add to the back of the queue\n";
+    cout << "Enter a positive integer:\n";
     cout << ">> ";
 }
 
@@ -41,7 +41,7 @@ void Menu::addValue() {
 *********************************************************************/
 void Menu::displayFirstNode() {
     cout << "+--------------------------------------------------+\n";
-    cout << "First Node Value:\n";
+    cout << "First Node Value is: ";
 }
 
 /*********************************************************************
@@ -57,7 +57,7 @@ void Menu::removeFirstNode() {
 *********************************************************************/
 void Menu::displayQueueContents() {
     cout << "+--------------------------------------------------+\n";
-    cout << "Displaying the queue's contents:\n";
+    cout << "Your queue is: ";
 }
 
 /*********************************************************************
