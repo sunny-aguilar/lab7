@@ -21,6 +21,7 @@ public:
     void queueOperations();
     void addback();
     void removeFront();
+    void getFront();
 
 private:
     Menu menu;
