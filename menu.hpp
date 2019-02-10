@@ -18,6 +18,10 @@ using std::endl;
 
 class Menu {
 public:
+    Menu();
+    void startMenu();
+    int validateNumber(int min, int max);
+    int validateInteger(int min, int max);
 
 private:
 
