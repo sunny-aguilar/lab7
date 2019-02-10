@@ -64,8 +64,8 @@ void Queue::queueOperations() {
 /*********************************************************************
 ** Description:     function takes a user-entered int value as a
 **                  parameter. A new node is created with the integer
- *                  as its value and the node is added to the back of
- *                  the queue.
+**                  as its value and the node is added to the back of
+**                  the queue.
 *********************************************************************/
 void Queue::addBack(int num) {}
 
