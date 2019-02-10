@@ -76,11 +76,12 @@ void Queue::addBack(int num) {}
 void Queue::removeFront() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     this function removes the front node in the queue
+**                  and frees the memory
 *********************************************************************/
 void Queue::getFront() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     this function
 *********************************************************************/
 void Queue::printQueue() {}
