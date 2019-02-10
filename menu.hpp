@@ -21,6 +21,9 @@ public:
     Menu();
     void startMenu();
     void addValue();
+    void displayFirstNode();
+    void removeFirstNode();
+    void displayQueueContents();
     int validateNumber(int min, int max);
     int validateInteger(int min, int max);
 

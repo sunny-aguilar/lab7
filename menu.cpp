@@ -33,6 +33,9 @@ void Menu::addValue() {
     cout << ">> ";
 }
 
+void Menu::displayFirstNode() {}
+void Menu::removeFirstNode() {}
+
 /*********************************************************************
 ** Description:     general validator where the parameters are the
 **                  min and max numbers acceptable
