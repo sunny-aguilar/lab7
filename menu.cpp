@@ -32,7 +32,7 @@ void Menu::startMenu() {
 *********************************************************************/
 void Menu::addValue() {
     cout << "+--------------------------------------------------+\n";
-    cout << "\n Enter a value to add to the back of the queue\n";
+    cout << "Enter a value to add to the back of the queue\n";
     cout << ">> ";
 }
 
@@ -40,7 +40,8 @@ void Menu::addValue() {
 ** Description:     d
 *********************************************************************/
 void Menu::displayFirstNode() {
-
+    cout << "+--------------------------------------------------+\n";
+    cout << "First Node Value:\n";
 }
 
 /*********************************************************************
