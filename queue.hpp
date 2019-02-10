@@ -19,7 +19,7 @@ public:
     void startQueue();
     void queueFlow();
     void queueOperations();
-    void addBack();
+    void addBack(int num);
     void removeFront();
     void getFront();
     void printQueue();
