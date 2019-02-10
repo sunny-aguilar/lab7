@@ -12,10 +12,11 @@ using std::endl;
 using std::cout;
 
 class Queue {
+public:
+    void startQueue();
+
 private:
 
-
-public:
 
 };
 

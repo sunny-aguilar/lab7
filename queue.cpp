@@ -5,3 +5,10 @@
 ** Description:         Menu class description here
 *********************************************************************/
 #include "queue.hpp"
+
+/*********************************************************************
+** Description:     start menu that prompts user to select an option
+*********************************************************************/
+void Queue::startQueue() {
+
+}
