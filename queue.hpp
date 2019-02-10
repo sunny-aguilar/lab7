@@ -4,13 +4,19 @@
 ** Date: 				02/20/2019
 ** Description:         Menu class description here
 *********************************************************************/
+#ifndef LAB7_QUEUE_HPP
+#define LAB7_QUEUE_HPP
+
 #include <iostream>
-#include "queue.hpp"
+using std::endl;
+using std::cout;
 
-int main() {
-    Queue queue;
+class Queue {
+private:
 
 
+public:
 
-    return 0;
-}
+};
+
+#endif // LAB7_QUEUE_HPP
