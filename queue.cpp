@@ -70,5 +70,6 @@ void Queue::addBack() {}
 ** Description:     start menu that prompts user to select an option
 *********************************************************************/
 void Queue::removeFront() {}
+
 void Queue::getFront() {}
 void Queue::printQueue() {}
