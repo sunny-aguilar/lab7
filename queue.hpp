@@ -15,6 +15,7 @@ using std::cout;
 class Queue {
 public:
     void startQueue();
+    void queueFlow();
 
 private:
     Menu menu;

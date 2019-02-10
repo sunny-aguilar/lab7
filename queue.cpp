@@ -10,7 +10,12 @@
 ** Description:     start menu that prompts user to select an option
 *********************************************************************/
 void Queue::startQueue() {
-    menu.startMenu();
+
 
 }
 
+void Queue::queueFlow() {
+    do {
+        menu.startMenu();
+    } while ();
+}
