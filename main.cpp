@@ -9,8 +9,6 @@
 
 int main() {
     Queue queue;
-
-
-
+    queue.startQueue();
     return 0;
 }
