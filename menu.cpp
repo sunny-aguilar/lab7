@@ -16,7 +16,13 @@ Menu::Menu() {}
 ** Description:     start menu that prompts user to select an option
 *********************************************************************/
 void Menu::startMenu() {
-
+    cout << "Welcome to my queue!\n\n";
+    cout << "Choose from the following options:\n";
+    cout << "1. Enter a value to be added to the back of queue\n";
+    cout << "2. Display first node (front) value\n";
+    cout << "3. Remove first node (front) value\n";
+    cout << "4. Display the queue contents\n";
+    cout << "5. Exit\n";
 }
 
 /*********************************************************************
