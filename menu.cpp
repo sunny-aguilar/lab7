@@ -16,7 +16,8 @@ Menu::Menu() {}
 ** Description:     start menu that prompts user to select an option
 *********************************************************************/
 void Menu::startMenu() {
-    cout << "WELCOME TO MY QUEUE!\n\n";
+    cout << "WELCOME TO MY QUEUE!\n";
+    cout << "+--------------------------------------------------+\n";
     cout << "Choose from the following options:\n";
     cout << "1. Enter a value to be added to the back of queue\n";
     cout << "2. Display first node (front) value\n";
@@ -25,7 +26,12 @@ void Menu::startMenu() {
     cout << "5. Exit\n";
 }
 
-
+void Menu::addValue() {
+    cout << "\n Enter an integer from 0 to 999 to \n";
+    cout << " add to the head of the list\n";
+    cout << "+--------------------------------------------------+\n";
+    cout << ">> ";
+}
 
 /*********************************************************************
 ** Description:     general validator where the parameters are the

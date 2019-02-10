@@ -20,6 +20,7 @@ class Menu {
 public:
     Menu();
     void startMenu();
+    void addValue();
     int validateNumber(int min, int max);
     int validateInteger(int min, int max);
 
