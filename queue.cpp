@@ -45,16 +45,16 @@ void Queue::queueOperations() {
             menu.addValue();
             break;
         case 2:
-
+            menu.displayFirstNode();
             break;
         case 3:
-
+            menu.removeFirstNode();
             break;
         case 4:
-
+            menu.displayQueueContents();
             break;
         case 5:
-
+            showMenu = false;
             break;
         default:
             cout << "Unable to determine your selection!\n";
