@@ -22,6 +22,7 @@ public:
     void addback();
     void removeFront();
     void getFront();
+    void printQueue();
 
 private:
     Menu menu;
