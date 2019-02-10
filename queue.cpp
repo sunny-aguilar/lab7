@@ -7,15 +7,27 @@
 #include "queue.hpp"
 
 /*********************************************************************
-** Description:     start menu that prompts user to select an option
+** Description:     starts queue operations
 *********************************************************************/
 void Queue::startQueue() {
-
-
+    queueFlow();
 }
 
+/*********************************************************************
+** Description:     start menu that prompts user to select an option
+*********************************************************************/
 void Queue::queueFlow() {
     do {
         menu.startMenu();
-    } while ();
+
+        queueOperations();
+    } while (showMenu);
+}
+
+/*********************************************************************
+** Description:     function provides a switch statement that performs
+**                  queue operations.
+*********************************************************************/
+void Queue::queueOperations() {
+
 }

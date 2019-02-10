@@ -16,9 +16,11 @@ class Queue {
 public:
     void startQueue();
     void queueFlow();
+    void queueOperations();
 
 private:
     Menu menu;
+    bool showMenu;
 
 };
 
