@@ -70,7 +70,8 @@ void Queue::queueOperations() {
 void Queue::addBack(int num) {}
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the value of the node at the front of the
+**                  queue
 *********************************************************************/
 void Queue::removeFront() {}
 
