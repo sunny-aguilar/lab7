@@ -7,6 +7,7 @@
 #ifndef LAB7_QUEUE_HPP
 #define LAB7_QUEUE_HPP
 
+#include "menu.hpp"
 #include <iostream>
 using std::endl;
 using std::cout;
