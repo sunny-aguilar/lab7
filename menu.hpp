@@ -27,5 +27,4 @@ private:
 
 };
 
-
 #endif //LAB7_MENU_HPP
