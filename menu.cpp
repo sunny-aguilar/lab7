@@ -35,6 +35,7 @@ void Menu::addValue() {
 
 void Menu::displayFirstNode() {}
 void Menu::removeFirstNode() {}
+void Menu::displayQueueContents() {}
 
 /*********************************************************************
 ** Description:     general validator where the parameters are the
