@@ -83,7 +83,14 @@ void Queue::addBack(int num) {
 ** Description:     this function removes the front node in the queue
 **                  and frees the memory
 *********************************************************************/
-void Queue::getFront() {}
+void Queue::getFront() {
+    if (head == nullptr) {
+        cout << "The queue is empty\n";
+    }
+    else {
+        cout << head->val << endl;
+    }
+}
 
 /*********************************************************************
 ** Description:     returns the value of the node at the front of the
