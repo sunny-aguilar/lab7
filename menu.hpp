@@ -1,7 +1,10 @@
-//
-// Created by Sandro Aguilar on 2019-02-09.
-//
-
+/*********************************************************************
+** Author:          Sandro Aguilar
+** Date:            Jan 2019
+** Description:     Menu class contains a series of messages and
+**                  prompts for the user. Menu class also validates
+**                  user's input.
+*********************************************************************/
 #ifndef LAB7_MENU_HPP
 #define LAB7_MENU_HPP
 
