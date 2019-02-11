@@ -104,6 +104,9 @@ void Queue::getFront() {
 **                  queue
 *********************************************************************/
 void Queue::removeFront() {
+
+    QueueNode *temp = nullptr;
+
     if ( isEmpty() ) {
         cout << "There are no nodes in the queue\n";
     }
