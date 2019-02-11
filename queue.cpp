@@ -130,7 +130,7 @@ void Queue::printQueue() {
     if (isEmpty()) {
         cout << "The queue is empty\n";
     }
-    while (!isEmpty()) {
+    while (temp != nullptr) {
         cout << temp->val << " ";
         temp = temp->next;
     }
