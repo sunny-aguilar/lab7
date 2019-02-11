@@ -111,9 +111,9 @@ void Queue::removeFront() {
         cout << "There are no nodes in the queue\n";
     }
     else {
-
+        temp = head;
         head = head->next;
-
+        delete temp;
     }
 }
 
