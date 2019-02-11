@@ -124,7 +124,9 @@ void Queue::removeFront() {
 **                  starting from the head using the next pointer and
 **                  prints the values of each node in the queue.
 *********************************************************************/
-void Queue::printQueue() {}
+void Queue::printQueue() {
+
+}
 
 /*********************************************************************
 ** Description:     this function checks if the que is empty and if
