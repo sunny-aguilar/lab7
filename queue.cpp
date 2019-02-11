@@ -127,7 +127,8 @@ void Queue::removeFront() {
 void Queue::printQueue() {
     QueueNode *temp = head;
     while (!isEmpty()) {
-
+        cout << temp->val << " ";
+        temp = temp->next;
     }
 }
 
