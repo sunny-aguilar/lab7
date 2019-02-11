@@ -109,6 +109,8 @@ void Queue::removeFront() {
     }
     else {
 
+        head = head->next;
+
     }
 }
 
