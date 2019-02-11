@@ -126,6 +126,10 @@ void Queue::removeFront() {
 *********************************************************************/
 void Queue::printQueue() {
     QueueNode *temp = head;
+
+    if (isEmpty()) {
+        cout << "The queue is empty\n";
+    }
     while (!isEmpty()) {
         cout << temp->val << " ";
         temp = temp->next;
