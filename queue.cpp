@@ -103,7 +103,14 @@ void Queue::getFront() {
 ** Description:     returns the value of the node at the front of the
 **                  queue
 *********************************************************************/
-void Queue::removeFront() {}
+void Queue::removeFront() {
+    if ( isEmpty() ) {
+        cout << "There are no nodes in the queue\n";
+    }
+    else {
+
+    }
+}
 
 /*********************************************************************
 ** Description:     this function traverses through the queue
