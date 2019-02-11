@@ -44,22 +44,22 @@ void Queue::queueOperations() {
         case 1:
             menu.addValue();
             addBack( menu.validateNumber(1, 20000) );
-            cout << endl;
+            cout << endl << endl;
             break;
         case 2:
             menu.displayFirstNode();
             getFront();
-            cout << endl;
+            cout << endl << endl;
             break;
         case 3:
             menu.removeFirstNode();
             removeFront();
-            cout << endl;
+            cout << endl << endl;
             break;
         case 4:
             menu.displayQueueContents();
             printQueue();
-            cout << endl;
+            cout << endl << endl;
             break;
         case 5:
             showMenu = false;
