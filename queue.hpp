@@ -34,6 +34,7 @@ private:
         int val;
     };
     QueueNode *head;
+    QueueNode *rear;
 
 };
 
