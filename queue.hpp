@@ -32,13 +32,16 @@ private:
         QueueNode *next;
         QueueNode *prev;
         int val;
-        QueueNode(int val, QueueNode *next = nullptr) {
+        QueueNode(int val, QueueNode *next = nullptr, QueueNode *prev = nullptr) {
             this->val = val;
             this->next = next;
+            this->prev = prev;
         }
     };
     QueueNode *head;
     QueueNode *rear;
+
+
 
 };
 
