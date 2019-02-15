@@ -4,7 +4,7 @@
 ** Date: 				02/20/2019
 ** Description:         Queue class implements a circular linked list
 **                      where the tail pointer points back to the
- *                      front of the li
+ *                      front of the list.
 *********************************************************************/
 #ifndef LAB7_QUEUE_HPP
 #define LAB7_QUEUE_HPP
