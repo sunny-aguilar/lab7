@@ -4,7 +4,7 @@
 ** Date: 				02/20/2019
 ** Description:         This program creates an example of a circular
 **                      linked list. The nodes are created using a
-**                      struct container that holds a pointer
+**                      struct container that holds an integer
 *********************************************************************/
 #include <iostream>
 #include "queue.hpp"
