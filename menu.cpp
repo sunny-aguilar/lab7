@@ -37,7 +37,7 @@ void Menu::addValue() {
 }
 
 /*********************************************************************
-** Description:     displays the first node
+** Description:     displays the head node
 *********************************************************************/
 void Menu::displayFirstNode() {
     cout << "+--------------------------------------------------+\n";
