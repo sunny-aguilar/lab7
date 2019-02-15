@@ -9,7 +9,7 @@
 /*********************************************************************
 ** Description:     constructor
 *********************************************************************/
-Queue::Queue() : showMenu{true}, head{nullptr}, rear{nullptr} {}
+Queue::Queue() : showMenu{true}, head{nullptr}, tail{nullptr} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -78,11 +78,11 @@ void Queue::queueOperations() {
 void Queue::addBack(int num) {
     if (head == nullptr) {
         head = new QueueNode(num);
-        rear = head;
+        tail = head;
     }
     else {
-        rear->next = new QueueNode(num);
-        rear = rear->next;
+        tail->next = new QueueNode(num);
+        tail = tail->next;
     }
 }
 

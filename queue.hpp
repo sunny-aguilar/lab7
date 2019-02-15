@@ -39,7 +39,7 @@ private:
         }
     };
     QueueNode *head;
-    QueueNode *rear;
+    QueueNode *tail;
 
 
 
