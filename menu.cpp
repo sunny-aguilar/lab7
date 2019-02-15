@@ -54,7 +54,7 @@ void Menu::removeFirstNode() {
 }
 
 /*********************************************************************
-** Description:     displays to user the
+** Description:     displays to user the queue contents
 *********************************************************************/
 void Menu::displayQueueContents() {
     cout << "+--------------------------------------------------+\n";
