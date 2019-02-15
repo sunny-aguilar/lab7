@@ -5,7 +5,7 @@
 ** Description:         Queue class implements a circular linked list
 **                      where the tail pointer points back to the
 **                      front of the list. Node is declared as a
-**                      in the
+**                      in the queue class declaration.
 *********************************************************************/
 #ifndef LAB7_QUEUE_HPP
 #define LAB7_QUEUE_HPP
