@@ -128,7 +128,7 @@ void Queue::printQueue() {
     QueueNode *temp = head;
 
     if (isEmpty()) {
-        cout << "The queue is empty\n";
+        cout << "The queue is empty!\n";
     }
     while (temp != nullptr) {
         cout << temp->val << " ";
@@ -142,6 +142,6 @@ void Queue::printQueue() {
 **                  false
 *********************************************************************/
 bool Queue::isEmpty() {
-    if (head == nullptr) { return true; }
+    if (!head) { return true; }
     else { return false; }
 }
