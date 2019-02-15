@@ -1,5 +1,5 @@
 /*********************************************************************
-** Program name: 		LAB 7 - Linked List
+** Program name: 		LAB 7 - Cicular Linked List
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
 ** Description:         This program creates an example of a circular
