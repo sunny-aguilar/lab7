@@ -3,7 +3,7 @@
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
 ** Description:         Menu class provides the driver program to
- *                      interact with the
+**                      interact with the
 *********************************************************************/
 #ifndef LAB7_QUEUE_HPP
 #define LAB7_QUEUE_HPP
