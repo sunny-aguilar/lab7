@@ -41,7 +41,6 @@ private:
     QueueNode *head;
     QueueNode *tail;
 
-
 };
 
 #endif // LAB7_QUEUE_HPP
