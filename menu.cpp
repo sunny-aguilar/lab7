@@ -45,7 +45,8 @@ void Menu::displayFirstNode() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays to user that head node is being
+ *
 *********************************************************************/
 void Menu::removeFirstNode() {
     cout << "+--------------------------------------------------+\n";
