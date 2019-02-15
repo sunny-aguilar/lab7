@@ -8,7 +8,6 @@
 **                      value and pointers to the next and previous
 **                      nodes
 *********************************************************************/
-//#include <iostream>
 #include "queue.hpp"
 
 int main() {
