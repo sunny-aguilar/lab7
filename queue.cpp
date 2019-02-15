@@ -79,10 +79,27 @@ void Queue::addBack(int num) {
     if (head == nullptr) {
         head = new QueueNode(num);
         tail = head;
+        cout << "Head node value is " << head << endl;
     }
     else {
         tail->next = new QueueNode(num);
-        tail = tail->next;
+        //tail = tail->next; // restore this, see github if needed
+
+        // test code here
+        //cout << "nextnode value is " << tail << endl;
+        tail = head;
+        //cout << "2nd node tail value is " << tail->next << endl;
+
+        QueueNode *nodePtr = head;
+//        if (nodePtr->next == nullptr) {
+//            cout << "head nodePtr address is " << nodePtr << endl;
+//        }
+        while (nodePtr->next != nullptr) {
+            cout << "nodePtr address is " << nodePtr << endl;
+            nodePtr = nodePtr->next;
+            cout << "nodePtr address is " << nodePtr << endl;
+        }
+        cout << "last node tail pointer is " << tail << endl;
     }
 }
 
