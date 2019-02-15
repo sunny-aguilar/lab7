@@ -46,7 +46,7 @@ void Menu::displayFirstNode() {
 
 /*********************************************************************
 ** Description:     displays to user that head node is being
- *
+ *                  removed
 *********************************************************************/
 void Menu::removeFirstNode() {
     cout << "+--------------------------------------------------+\n";
