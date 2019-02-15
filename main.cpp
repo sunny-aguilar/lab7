@@ -6,7 +6,7 @@
 **                      linked list. The nodes are created using a
 **                      struct container that holds an integer data
 **                      value and pointers to the next and previous
- *                      nodes
+**                      nodes
 *********************************************************************/
 #include <iostream>
 #include "queue.hpp"
