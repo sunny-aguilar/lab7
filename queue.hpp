@@ -3,7 +3,8 @@
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
 ** Description:         Queue class implements a circular linked list
-**                      interact with the queue list. Menu
+**                      where the tail pointer points back to the
+ *                      f
 *********************************************************************/
 #ifndef LAB7_QUEUE_HPP
 #define LAB7_QUEUE_HPP
