@@ -3,7 +3,8 @@
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
 ** Description:         This program creates an example of a circular
-**                      linked list. The nodes are created using
+**                      linked list. The nodes are created using a
+**                      struct
 *********************************************************************/
 #include <iostream>
 #include "queue.hpp"
