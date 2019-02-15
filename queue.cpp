@@ -137,7 +137,7 @@ void Queue::printQueue() {
 }
 
 /*********************************************************************
-** Description:     this function checks if the que is empty and if
+** Description:     this function checks if the queue is empty and if
 **                  it is, then it returns true otherwise it returns
 **                  false
 *********************************************************************/
