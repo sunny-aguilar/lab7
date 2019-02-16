@@ -78,12 +78,16 @@ void Queue::queueOperations() {
 void Queue::addBack(int num) {
     if (head == nullptr) {
         head = new QueueNode(num);
-        tail = head;
-        cout << "Head node value is " << head << endl;
+        //tail = head;
+        cout << "first head node value is " << head << endl;
+        QueueNode *nodePtr = head;
+        cout << "prev address is " << nodePtr->prev << endl;
+        cout << "next address is " << nodePtr->next << endl;
     }
     else {
-        tail->next = new QueueNode(num);
+        tail->next = new QueueNode(num, nullptr, tail);
         //tail = tail->next; // restore this, see github if needed
+
 
         // test code here
         //cout << "nextnode value is " << tail << endl;
@@ -91,15 +95,19 @@ void Queue::addBack(int num) {
         //cout << "2nd node tail value is " << tail->next << endl;
 
         QueueNode *nodePtr = head;
-//        if (nodePtr->next == nullptr) {
-//            cout << "head nodePtr address is " << nodePtr << endl;
-//        }
+        nodePtr->prev = tail;
+
+        static int iterations = 0;
         while (nodePtr->next != nullptr) {
-            cout << "nodePtr address is " << nodePtr << endl;
+            iterations++;
+            cout << "Loop #" << iterations << endl;
+            cout << "nodePtr address " << nodePtr << endl;
             nodePtr = nodePtr->next;
-            cout << "nodePtr address is " << nodePtr << endl;
+            cout << "nodePtr->next address " << nodePtr << endl;
         }
-        cout << "last node tail pointer is " << tail << endl;
+        cout << "last node tail pointer " << tail << endl;
+        tail->next = head;
+        cout << "tail->next address " << tail->next << endl;
     }
 }
 
