@@ -9,7 +9,7 @@
 /*********************************************************************
 ** Description:     constructor
 *********************************************************************/
-Queue::Queue() : showMenu{true}, head{nullptr}, tail{nullptr} {}
+Queue::Queue() : showMenu{true}, head{nullptr} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -76,49 +76,53 @@ void Queue::queueOperations() {
 **                  the queue.
 *********************************************************************/
 void Queue::addBack(int num) {
+//    if (head == nullptr) {
+//        head = new QueueNode(num);
+//        cout << "prev address is " << head->prev << endl;
+//        cout << "first head node value is " << head << endl;
+//        cout << "next address is " << head->next << endl;
+//    }
+//    else {
+//        QueueNode *nodePtr = head;
+//        while (nodePtr->next != nullptr) {
+//            cout << "reached" << endl;
+//            nodePtr = nodePtr->next;
+//        }
+//        // next, prev
+//        nodePtr->next = new QueueNode(num, nullptr, nodePtr);
+//
+////        nodePtr = head;
+////        while (nodePtr->next != nullptr) {
+////            nodePtr = nodePtr->next;
+////            cout << "while nodePtr address " << nodePtr << endl;
+////        }
+//        cout << "nodePtr->prev address " << nodePtr->prev << endl;
+//        cout << "nodePtr address " << nodePtr << endl;
+//        cout << "nodePtr->next address " << nodePtr->next << endl;
+//        cout << "nodePtr->next->next " << nodePtr->next->next << endl;
+//
+//        nodePtr = head;
+//        // next, prev
+//        nodePtr->next = new QueueNode(num, nullptr, nodePtr);
+//
+//
+//    }
     if (head == nullptr) {
         head = new QueueNode(num);
-        //tail = head;
+        head->prev = head;
+        head->next = head;
+        cout << "prev address is " << head->prev << endl;
         cout << "first head node value is " << head << endl;
-        QueueNode *nodePtr = head;
-        cout << "prev address is " << nodePtr->prev << endl;
-        cout << "next address is " << nodePtr->next << endl;
+        cout << "next address is " << head->next << endl;
     }
     else {
         QueueNode *nodePtr = head;
-        if (nodePtr->next == nullptr) {
-            head->next = new QueueNode(num, nullptr);
-        }
-        else {
-            nodePtr = head;
-            while (nodePtr->next != nullptr) {
-                
-            }
-        }
+                                        // next, prev
+        nodePtr->prev = new QueueNode(num);
+        //nodePtr
 
-
-        //tail = tail->next; // restore this, see github if needed
-
-
-        // test code here
-        //cout << "nextnode value is " << tail << endl;
-        tail = head;
-        //cout << "2nd node tail value is " << tail->next << endl;
-
-        QueueNode *nodePtr = head;
-        nodePtr->prev = tail;
-
-        static int iterations = 0;
-        while (nodePtr->next != nullptr) {
-            iterations++;
-            cout << "Loop #" << iterations << endl;
-            cout << "nodePtr address " << nodePtr << endl;
-            nodePtr = nodePtr->next;
-            cout << "nodePtr->next address " << nodePtr << endl;
-        }
-        cout << "last node tail pointer " << tail << endl;
-        tail->next = head;
-        cout << "tail->next address " << tail->next << endl;
+        cout << "1st node address " << nodePtr << " and val " << nodePtr->val << endl;
+        cout << "2nd node address " << nodePtr->next << " and val " << nodePtr->next->val << endl;
     }
 }
 
@@ -161,14 +165,21 @@ void Queue::removeFront() {
 **                  prints the values of each node in the queue.
 *********************************************************************/
 void Queue::printQueue() {
+    bool ref = true;
     QueueNode *temp = head;
 
     if (isEmpty()) {
         cout << "The queue is empty!\n";
+        return;
     }
-    while (temp != nullptr) {
-        cout << temp->val << " ";
-        temp = temp->next;
+    else {
+        while (ref) {
+            cout << temp->val << " ";
+            temp = temp->next;
+            if (temp == head) {
+                ref = false;
+            }
+        }
     }
 }
 
