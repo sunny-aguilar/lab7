@@ -14,7 +14,14 @@ Queue::Queue() : showMenu{true}, head{nullptr} {}
 /*********************************************************************
 ** Description:     destructor
 *********************************************************************/
-Queue::~Queue() {}
+Queue::~Queue() {
+    QueueNode *nodePtr = head;
+    while (nodePtr != nullptr) {
+        QueueNode *garbage = nodePtr;
+        nodePtr = nodePtr->next();
+        delete garbage;
+    }
+}
 
 /*********************************************************************
 ** Description:     starts queue operations
