@@ -76,53 +76,25 @@ void Queue::queueOperations() {
 **                  the queue.
 *********************************************************************/
 void Queue::addBack(int num) {
-//    if (head == nullptr) {
-//        head = new QueueNode(num);
-//        cout << "prev address is " << head->prev << endl;
-//        cout << "first head node value is " << head << endl;
-//        cout << "next address is " << head->next << endl;
-//    }
-//    else {
-//        QueueNode *nodePtr = head;
-//        while (nodePtr->next != nullptr) {
-//            cout << "reached" << endl;
-//            nodePtr = nodePtr->next;
-//        }
-//        // next, prev
-//        nodePtr->next = new QueueNode(num, nullptr, nodePtr);
-//
-////        nodePtr = head;
-////        while (nodePtr->next != nullptr) {
-////            nodePtr = nodePtr->next;
-////            cout << "while nodePtr address " << nodePtr << endl;
-////        }
-//        cout << "nodePtr->prev address " << nodePtr->prev << endl;
-//        cout << "nodePtr address " << nodePtr << endl;
-//        cout << "nodePtr->next address " << nodePtr->next << endl;
-//        cout << "nodePtr->next->next " << nodePtr->next->next << endl;
-//
-//        nodePtr = head;
-//        // next, prev
-//        nodePtr->next = new QueueNode(num, nullptr, nodePtr);
-//
-//
-//    }
+    QueueNode *newNode = new QueueNode(num);
+
     if (head == nullptr) {
         head = new QueueNode(num);
         head->prev = head;
         head->next = head;
-        cout << "prev address is " << head->prev << endl;
-        cout << "first head node value is " << head << endl;
-        cout << "next address is " << head->next << endl;
     }
     else {
-        QueueNode *nodePtr = head;
-                                        // next, prev
-        nodePtr->prev = new QueueNode(num);
-        //nodePtr
+        QueueNode *headNode = head;
 
-        cout << "1st node address " << nodePtr << " and val " << nodePtr->val << endl;
-        cout << "2nd node address " << nodePtr->next << " and val " << nodePtr->next->val << endl;
+        newNode->next = headNode;
+
+        QueueNode *oldBack = head->prev;
+
+        newNode->prev = oldBack;
+
+        oldBack->next = newNode;
+
+        head->prev = newNode;
     }
 }
 
@@ -140,29 +112,43 @@ void Queue::getFront() {
 }
 
 /*********************************************************************
-** Description:     returns the value of the node at the front of the
-**                  queue
+** Description:     removes the head node of the queue, if it exist
+**                  otherwise it prompts user that there are no nodes
+**                  to be removed.
 *********************************************************************/
 void Queue::removeFront() {
-    // create temp node
-    QueueNode *temp = nullptr;
-
     // if node is empty, do not remove anything
     // else update head pointer and delete node
     if ( isEmpty() ) {
         cout << "There are no nodes in the queue\n";
     }
     else {
-        temp = head;
-        head = head->next;
-        delete temp;
+        // create temp node
+        QueueNode *oldHead = head;
+        QueueNode *newHead = nullptr;
+        newHead = head->next;
+
+        if (newHead != oldHead) {
+            newHead->prev = oldHead->prev;
+
+            QueueNode *last = head->prev;
+            last->next = newHead;
+            head = newHead;
+        }
+        else {
+            head = nullptr;
+        }
+        delete oldHead;
     }
 }
 
 /*********************************************************************
 ** Description:     this function traverses through the queue
 **                  starting from the head using the next pointer and
-**                  prints the values of each node in the queue.
+**                  prints the values of each node in the queue. The
+**                  user is alerted if no nodes exist however, if 1
+**                  or more nodes exist, then the list is traversed
+**                  until it reaches the head node.
 *********************************************************************/
 void Queue::printQueue() {
     bool ref = true;
