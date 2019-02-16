@@ -18,7 +18,7 @@ Queue::~Queue() {
     QueueNode *nodePtr = head;
     while (nodePtr != nullptr) {
         QueueNode *garbage = nodePtr;
-        nodePtr = nodePtr->next();
+        nodePtr = nodePtr->next;
         delete garbage;
     }
 }
