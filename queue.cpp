@@ -85,7 +85,18 @@ void Queue::addBack(int num) {
         cout << "next address is " << nodePtr->next << endl;
     }
     else {
-        tail->next = new QueueNode(num, nullptr, tail);
+        QueueNode *nodePtr = head;
+        if (nodePtr->next == nullptr) {
+            head->next = new QueueNode(num, nullptr);
+        }
+        else {
+            nodePtr = head;
+            while (nodePtr->next != nullptr) {
+                
+            }
+        }
+
+
         //tail = tail->next; // restore this, see github if needed
 
 
