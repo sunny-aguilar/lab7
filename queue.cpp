@@ -16,11 +16,11 @@ Queue::Queue() : showMenu{true}, head{nullptr} {}
 *********************************************************************/
 Queue::~Queue() {
     QueueNode *nodePtr = head;
-    while (nodePtr != nullptr) {
+    do {
         QueueNode *garbage = nodePtr;
         nodePtr = nodePtr->next;
         delete garbage;
-    }
+    } while (nodePtr != nullptr && nodePtr != head);
 }
 
 /*********************************************************************
@@ -83,24 +83,25 @@ void Queue::queueOperations() {
 **                  the queue.
 *********************************************************************/
 void Queue::addBack(int num) {
-    QueueNode *newNode = new QueueNode(num);
-
     if (head == nullptr) {
         head = new QueueNode(num);
         head->prev = head;
         head->next = head;
     }
     else {
+        // create a new node
+        QueueNode *newNode = new QueueNode(num);
+        // get the head node
         QueueNode *headNode = head;
-
+        // new node next pointer point to head node
         newNode->next = headNode;
-
+        // get node behind head node
         QueueNode *oldBack = head->prev;
-
+        // new node prev pointer point to node behind head
         newNode->prev = oldBack;
-
+        // node behind head next point to new node
         oldBack->next = newNode;
-
+        // connect head node previous to new node
         head->prev = newNode;
     }
 }
