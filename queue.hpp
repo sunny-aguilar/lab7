@@ -21,17 +21,23 @@ public:
     ~Queue();
     void startQueue();
     void queueFlow();
-    void queueOperations();
+    bool queueOperations();
     void addBack(int num);
     void removeFront();
     void getFront();
     void printQueue();
     bool isEmpty();
+    // menu functions
+    void startMenu();
+    void addValue();
+    void displayFirstNode();
+    void removeFirstNode();
+    void displayQueueContents();
+    int validateNumber(int min, int max);
 
 private:
-    // menu object show menu
-    Menu menu;
-    // QueueNode
+    // menu object shows menu
+    //Menu menu;
     struct QueueNode {
         QueueNode *next;
         QueueNode *prev;
@@ -42,6 +48,7 @@ private:
             this->prev = prev;
         }
     };
+
     // data member
     QueueNode *head;
 };
