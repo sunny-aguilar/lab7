@@ -25,10 +25,11 @@ public:
     void removeFirstNode();
     void displayQueueContents();
     int validateNumber(int min, int max);
-    int validateInteger(int min, int max);
+    void setMenuControl(bool showMenu);
+    bool getMenuControl();
 
 private:
-
+    bool showMenu;
 };
 
 #endif //LAB7_MENU_HPP

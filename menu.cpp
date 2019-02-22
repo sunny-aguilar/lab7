@@ -10,7 +10,7 @@
 /*********************************************************************
 ** Description:     no-args default constructor
 *********************************************************************/
-Menu::Menu() {}
+Menu::Menu() : showMenu{true} {}
 
 /*********************************************************************
 ** Description:     start menu that prompts user to select an option
@@ -120,71 +120,12 @@ int Menu::validateNumber(int min, int max) {
 }
 
 /*********************************************************************
-** Description:     general integer validator where the parameters are
-**                  the min and max numbers acceptable
+** Description:     setter that sets bool value to true or false
 *********************************************************************/
-int Menu::validateInteger(int min, int max) {
-    char choice[100];
-    int validatedChoice = 0;
-    bool tooLong = false;
-    bool negativeFound = false;
-    bool notInRange = true;
-    bool characterFound = false;
-    long unsigned length = 0;
-    std::stringstream convert;
-
-    do {
-        cout << "Enter a number from " << min << " to " << max << endl;
-        cout << ">> ";
-        cin.getline(choice, 100);
-
-        // determine # of digits in max value acceptable
-        if (choice[0] == 45) { length = std::to_string(min).length(); }
-        else { length = std::to_string(max).length(); }
-
-        // reject any input that has more than digits than max parameter
-        tooLong = false;
-        if (strlen(choice) > length) {
-            tooLong = true;
-            cout << "Digits entered are too long!\n";
-        }
-
-        // check if a negative character has been found
-        negativeFound = false;
-        if (choice[0] == 45) { negativeFound = true; }
-
-        // if a value entered is a negative, validate value
-        notInRange = true;
-        characterFound = false;
-        if (negativeFound) {
-            for (int index = 1; index < strlen(choice); index++) {
-                if (choice[index] >= 48 && choice[index] <= 57) {
-                    notInRange = false;
-                }
-                if (choice[index] < 48 || choice[index] > 57) {
-                    characterFound = true;
-                }
-                if (characterFound) { notInRange = true; }
-            }
-            if (characterFound) { cout << "Make sure to only enter numbers!\n"; }
-        }
-        else { // if value entered is positive, validate value
-            for (int index = 0; index < strlen(choice); index++) {
-                if (choice[index] >= 48 && choice[index] <= 57) {
-                    notInRange = false;
-                }
-                if (choice[index] < 48 || choice[index] > 57) {
-                    characterFound = true;
-                }
-                if (characterFound) { notInRange = true; }
-            }
-            if (characterFound) { cout << "Make sure to only enter numbers!\n"; }
-        }
-
-    } while (tooLong || notInRange);
-
-    convert << choice;
-    convert >> validatedChoice;
-
-    return validatedChoice;
+void Menu::setMenuControl(bool showMenu) {
+    this->showMenu = showMenu;
 }
+
+/*********************************************************************
+** Description:     getter that sets bool value to true or false
+*********************************************************************/

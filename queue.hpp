@@ -29,8 +29,10 @@ public:
     bool isEmpty();
 
 private:
+    // menu object and bool to show menu
     Menu menu;
-    bool showMenu;
+    //bool showMenu;
+    // QueueNode
     struct QueueNode {
         QueueNode *next;
         QueueNode *prev;
@@ -41,6 +43,7 @@ private:
             this->prev = prev;
         }
     };
+    // data member
     QueueNode *head;
 };
 
