@@ -9,7 +9,7 @@
 /*********************************************************************
 ** Description:     constructor
 *********************************************************************/
-Queue::Queue() : showMenu{true}, head{nullptr} {}
+Queue::Queue() : head{nullptr} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -69,7 +69,8 @@ void Queue::queueOperations() {
             cout << endl << endl;
             break;
         case 5:
-            showMenu = false;
+            //showMenu = false;
+            menu.setMenuControl(false);
             break;
         default:
             cout << "Unable to determine your selection!\n";
