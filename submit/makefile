@@ -13,14 +13,11 @@ CXXFLAGS += -std=c++0x
 
 OBJECTS = main.o
 OBJECTS += queue.o
-OBJECTS += menu.o
 
 HPPs = queue.hpp
-HPPs += menu.hpp
 
 CPPs = main.cpp
 CPPs += queue.cpp
-CPPs += menu.cpp
 
 
 # Targets needed to bring the executable up to date
@@ -31,8 +28,6 @@ main.o: main.cpp $(HPPs)
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
 queue.o: queue.hpp
-
-menu.o: menu.hpp
 
 
 # Clean-up operations
