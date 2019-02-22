@@ -31,6 +31,7 @@ public:
 private:
     Menu menu;
     bool showMenu;
+    QueueNode *head;
     struct QueueNode {
         QueueNode *next;
         QueueNode *prev;
@@ -41,7 +42,6 @@ private:
             this->prev = prev;
         }
     };
-    QueueNode *head;
 };
 
 #endif // LAB7_QUEUE_HPP
