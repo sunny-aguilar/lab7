@@ -38,7 +38,7 @@ void Queue::queueFlow() {
         menu.startMenu();
 
         queueOperations();
-    } while (showMenu);
+    } while ( menu.getMenuControl() );
 }
 
 /*********************************************************************

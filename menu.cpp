@@ -129,3 +129,6 @@ void Menu::setMenuControl(bool showMenu) {
 /*********************************************************************
 ** Description:     getter that sets bool value to true or false
 *********************************************************************/
+bool Menu::getMenuControl() {
+    return showMenu;
+}
