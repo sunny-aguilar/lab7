@@ -51,7 +51,7 @@ bool Queue::queueOperations() {
     switch (validateNumber(1,5)) {
         case 1:
             addValue();
-            addBack( validateNumber(1, 20000) );
+            addBack( validateNumber(1, 2000) );
             cout << endl << endl;
             return true;
         case 2:
