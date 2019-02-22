@@ -48,7 +48,6 @@ void Queue::queueFlow() {
 **                  queue operations.
 *********************************************************************/
 bool Queue::queueOperations() {
-
     switch (validateNumber(1,5)) {
         case 1:
             addValue();

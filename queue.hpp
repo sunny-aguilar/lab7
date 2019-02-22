@@ -11,6 +11,10 @@
 #define LAB7_QUEUE_HPP
 
 #include <iostream>
+#include <cstring>
+#include <sstream>
+#include <iomanip>
+using std::cin;
 using std::endl;
 using std::cout;
 
