@@ -29,9 +29,8 @@ public:
     bool isEmpty();
 
 private:
-    // menu object and bool to show menu
+    // menu object show menu
     Menu menu;
-    //bool showMenu;
     // QueueNode
     struct QueueNode {
         QueueNode *next;

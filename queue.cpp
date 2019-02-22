@@ -69,7 +69,6 @@ void Queue::queueOperations() {
             cout << endl << endl;
             break;
         case 5:
-            //showMenu = false;
             menu.setMenuControl(false);
             break;
         default:
