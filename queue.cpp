@@ -2,7 +2,10 @@
 ** Program name: 		LAB 7 - Linked List
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
-** Description:         Menu class description here
+** Description:         Queue class implements a doubly linked circular
+**                      list where the tail pointer points back to the
+**                      front of the list. Node is declared as a struct
+**                      in the queue class declaration.
 *********************************************************************/
 #include "queue.hpp"
 
@@ -15,12 +18,14 @@ Queue::Queue() : head{nullptr} {}
 ** Description:     destructor
 *********************************************************************/
 Queue::~Queue() {
-    QueueNode *nodePtr = head;
-    do {
-        QueueNode *garbage = nodePtr;
-        nodePtr = nodePtr->next;
-        delete garbage;
-    } while (nodePtr != nullptr && nodePtr != head);
+    if (head != nullptr) {
+        QueueNode *nodePtr = head;
+        do {
+            QueueNode *garbage = nodePtr;
+            nodePtr = nodePtr->next;
+            delete garbage;
+        } while (nodePtr != nullptr && nodePtr != head);
+    }
 }
 
 /*********************************************************************

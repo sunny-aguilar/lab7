@@ -2,9 +2,9 @@
 ** Program name: 		LAB 7 - Linked List
 ** Author: 				Sandro Aguilar
 ** Date: 				02/20/2019
-** Description:         Queue class implements a circular linked list
-**                      where the tail pointer points back to the
-**                      front of the list. Node is declared as a
+** Description:         Queue class implements a doubly linked circular
+**                      list where the tail pointer points back to the
+**                      front of the list. Node is declared as a struct
 **                      in the queue class declaration.
 *********************************************************************/
 #ifndef LAB7_QUEUE_HPP
@@ -39,8 +39,6 @@ public:
     int validateNumber(int min, int max);
 
 private:
-    // menu object shows menu
-    //Menu menu;
     struct QueueNode {
         QueueNode *next;
         QueueNode *prev;
@@ -52,7 +50,6 @@ private:
         }
     };
 
-    // data member
     QueueNode *head;
 };
 
